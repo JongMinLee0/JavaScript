@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /* var member = ['egoing', 'k8805', 'sorialgi'];
+        alert(member[0]);
+        alert(member[1]);
+        alert(member[2]);
+        alert(member); */
+        
+        function get_members(){
+        	return ['egoing', 'k8805', 'sorialgi'];
+        }
+        
+        members = get_members();
+        members.push('jongmin');
+        members.unshift('jongmin2');
+        members.splice(3, 0,'jongmin3','jongmin4');
+        members.pop(4);
+        members.pop();
+        members.sort(); // members.reverse();
+        for(var i = 0; i < members.length; i++){
+        	document.write(members[i].toUpperCase()+"<br />");
+        }
+    </script>
+</body>
+</html>

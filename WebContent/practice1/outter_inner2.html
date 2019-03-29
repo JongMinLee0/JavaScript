@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <script>
+        function factory_movie(title){
+        	return {
+        		get_title : function (){
+        			return title;
+        		},
+        		set_title : function (_title){
+        			title = _title;
+        		}
+        	}
+        }
+        ghost = factory_movie("Ghost in the shell");
+        matrix = factory_movie("Matrix");
+        document.write(ghost.get_title());
+        document.write("<br />");
+        ghost.set_title("공각기동대")
+        document.write(matrix.get_title());
+        document.write("<br />"); 
+        document.write(ghost.get_title());
+    
+    </script>
+
+</body>
+</html>
